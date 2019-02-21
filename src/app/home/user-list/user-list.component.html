@@ -1,0 +1,20 @@
+<h4>Registered Users</h4>
+<div class="row">
+  <div class="col-6 mb-2" *ngFor="let user of users">
+    <img src="../../../assets/images/user.png" alt="User" class="img-fluid float-left" style="width: 265px;">
+    <div class="card">
+      <div class="card-body p-0">
+        <ul class="list-group">
+          <li class="list-group-item">Name: {{user.firstName}} {{user.lastName}}</li>
+          <li class="list-group-item">Email: {{user.email}}</li>
+          <li class="list-group-item">Mobile: {{user.mobile}}</li>
+          <li class="list-group-item">Gender: {{user.gender}}</li>
+          <li class="list-group-item">Profession: {{user.profession}}</li>
+          <li class="list-group-item">Password: {{user.password}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+

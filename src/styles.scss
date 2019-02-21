@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$text-family: 'Questrial',
+sans-serif;
+$heading-family: 'Righteous',
+cursive;
+$text-color: #333333;
+$white: #ffffff;
+
+body {
+  font-family: $text-family;
+  font-size: 14px;
+  color: $text-color;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-family
+}
+
+.form-wrapper {
+  background-image: url('../src/assets/images/bg-01.jpg');
+  background-size: cover;
+  
+  > .card {
+    padding-bottom: 5px;
+  }
+  .card {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    border-radius: 0;
+
+    .card-body {
+      border-radius: 4px;
+      background-color: $white;
+    }
+    .card-title {
+      font-size: 30px;
+    }
+  }
+}
+.form-group label {
+  margin-bottom: 3px;
+}
+.custom-control-label::before,
+.custom-control-label::after {
+    top: 0;
+}

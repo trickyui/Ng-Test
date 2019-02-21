@@ -1,0 +1,7 @@
+<div class="list-group mt-3">
+  <div class="list-group-item">Hi, {{username}}</div>
+  <a routerLink="./users" routerLinkActive="active" class="list-group-item">Registered Users</a>
+  <a routerLink="./about" routerLinkActive="active" class="list-group-item">About Us</a>
+  <a routerLink="./contact" routerLinkActive="active" class="list-group-item">Contact Us</a>
+  <a routerLink="/login" (click)="logout()" class="list-group-item">Logout</a>
+</div>
