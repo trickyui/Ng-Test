@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     let result = this.auth.users.find(data => {
-      if ((this.f.username.value == data.email)  && (this.f.password.value == data.password)) {
+      if ((this.f.username.value == data.email) && (this.f.password.value == data.password)) {
         return true
       }
     })
