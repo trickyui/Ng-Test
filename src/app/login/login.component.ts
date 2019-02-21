@@ -12,8 +12,6 @@ import { AuthService } from 'src/services/auth.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   submitted = false;
-  username: any;
-  password: any;
   validLogin = false;
   constructor(public router: Router, private auth: AuthService) { }
 
@@ -28,10 +26,8 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    let email = this.f.username.value;
-    let password = this.f.password.value
     let result = this.auth.users.find(data => {
-      if (data.email === email && data.password === password) {
+      if ((this.f.username.value == data.email)  && (this.f.password.value == data.password)) {
         return true
       }
     })
