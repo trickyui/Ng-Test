@@ -9,6 +9,8 @@ import { AboutComponent } from './home/about/about.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { UserListComponent } from './home/user-list/user-list.component';
 import { AuthGuard } from 'src/services/auth.guard';
+import { ProductListComponent } from './product-list/product-list.component';
+
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -20,6 +22,7 @@ const routes: Routes = [
       { path: 'about', component: AboutComponent },
       { path: 'users', component: UserListComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'product-list', component: ProductListComponent },
       { path: '', component: UserListComponent }
     ]
   },

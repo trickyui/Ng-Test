@@ -12,15 +12,16 @@ export class NavComponent implements OnInit {
 
   username: any;
   constructor(private auth: AuthService, private router: Router) { }
- 
+
   ngOnInit() {
-    this.username = this.auth.loginUser
-    console.log(this.username)
+    this.username = this.auth.loginUser;
+    console.log(this.username);
   }
 
-  logout(){
+  logout() {
     this.auth.setLogout();
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
+    sessionStorage.clear();
   }
 
 }

@@ -1,20 +1,27 @@
-<h4>Registered Users</h4>
-<div class="row">
-  <div class="col-6 mb-2" *ngFor="let user of users">
-    <img src="../../../assets/images/user.png" alt="User" class="img-fluid float-left" style="width: 265px;">
-    <div class="card">
-      <div class="card-body p-0">
-        <ul class="list-group">
-          <li class="list-group-item">Name: {{user.firstName}} {{user.lastName}}</li>
-          <li class="list-group-item">Email: {{user.email}}</li>
-          <li class="list-group-item">Mobile: {{user.mobile}}</li>
-          <li class="list-group-item">Gender: {{user.gender}}</li>
-          <li class="list-group-item">Profession: {{user.profession}}</li>
-          <li class="list-group-item">Password: {{user.password}}</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="clearfix">
+  <h4 class="float-left">Registered Users</h4>
+  <input type="text" class="form-control-sm float-right" [(ngModel)]="searchString" placeholder="search...">
 </div>
 
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Profession</th>
+      <th scope="col">Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of (users | searchFilter : searchString)">
+      <td>{{user.firstName + ' ' + user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.mobile}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.profession}}</td>
+      <td>{{user.password}}</td>
+    </tr>
+  </tbody>
+</table>

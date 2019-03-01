@@ -13,6 +13,9 @@ import { AboutComponent } from './home/about/about.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { NavComponent } from './home/nav/nav.component';
 import { UserListComponent } from './home/user-list/user-list.component';
+import { SearchFilterPipe } from './pipes/search-filter.pipe';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductFilterPipe } from './pipes/product-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { UserListComponent } from './home/user-list/user-list.component';
     AboutComponent,
     ContactComponent,
     NavComponent,
-    UserListComponent
+    UserListComponent,
+    SearchFilterPipe,
+    ProductListComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
