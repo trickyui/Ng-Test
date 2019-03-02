@@ -13,9 +13,9 @@ import { AboutComponent } from './home/about/about.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { NavComponent } from './home/nav/nav.component';
 import { UserListComponent } from './home/user-list/user-list.component';
-import { HighlightDirective } from './directives/highlight.directive';
-import { PlayGroundComponent } from './play-ground/play-ground.component';
-import { UppercaseDirective } from './directives/uppercase.directive';
+import { SearchFilterPipe } from './pipes/search-filter.pipe';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductFilterPipe } from './pipes/product-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -29,9 +29,9 @@ import { UppercaseDirective } from './directives/uppercase.directive';
     ContactComponent,
     NavComponent,
     UserListComponent,
-    HighlightDirective,
-    PlayGroundComponent,
-    UppercaseDirective,
+    SearchFilterPipe,
+    ProductListComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,

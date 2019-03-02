@@ -13,36 +13,6 @@ export class AuthService {
       mobile: 9560353234,
       gender: 'M',
       profession: 'Doctor',
-<<<<<<< HEAD
-=======
-      password: 'Password@123'
-    },
-    {
-      firstName: 'Kartik',
-      lastName: 'Gogia',
-      email: 'g@gmail.com',
-      mobile: 8285544964,
-      gender: 'M',
-      profession: 'Teacher',
-      password: 'Password@123'
-    },
-    {
-      firstName: 'Lalit',
-      lastName: 'Chauhan',
-      email: 'l@gmail.com',
-      mobile: 1234567890,
-      gender: 'M',
-      profession: 'Doctor',
-      password: 'Password@123'
-    },
-    {
-      firstName: 'Ajay',
-      lastName: 'Verma',
-      email: 'a@gmail.com',
-      mobile: 1234567890,
-      gender: 'M',
-      profession: 'Teacher',
->>>>>>> cb7e59483c84a562a350137b312dd4d0d06d1ce7
       password: 'Password@123'
     },
     {

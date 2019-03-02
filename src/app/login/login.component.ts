@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-=======
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
->>>>>>> cb7e59483c84a562a350137b312dd4d0d06d1ce7
 import { Router } from '@angular/router';
 import { AuthService } from 'src/services/auth.service';
 

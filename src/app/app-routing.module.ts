@@ -9,12 +9,8 @@ import { AboutComponent } from './home/about/about.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { UserListComponent } from './home/user-list/user-list.component';
 import { AuthGuard } from 'src/services/auth.guard';
-<<<<<<< HEAD
-import { PlayGroundComponent } from './play-ground/play-ground.component';
-=======
 import { ProductListComponent } from './product-list/product-list.component';
 
->>>>>>> cb7e59483c84a562a350137b312dd4d0d06d1ce7
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -30,8 +26,7 @@ const routes: Routes = [
       { path: '', component: UserListComponent }
     ]
   },
-  // { path: '', redirectTo: '/signup', pathMatch: 'full' },
-  {path: '', component: PlayGroundComponent},
+  { path: '', redirectTo: '/signup', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
 

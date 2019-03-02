@@ -1,36 +1,9 @@
 <div class="clearfix">
   <h4 class="float-left">Registered Users</h4>
-<<<<<<< HEAD
   <div class="form-group float-right">
     <input type="text" class="form-control form-control-sm" [(ngModel)]="query" placeholder="search...">
   </div>
-=======
-  <input type="text" class="form-control-sm float-right" [(ngModel)]="searchString" placeholder="search...">
->>>>>>> cb7e59483c84a562a350137b312dd4d0d06d1ce7
 </div>
-<table class="table table-sm">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Mobile</th>
-      <th scope="col">Gender</th>
-      <th scope="col">Profession</th>
-      <th scope="col">Password</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let user of users | searchList: query">
-      <td>{{user.firstName}} {{user.lastName}}</td>
-      <td>{{user.email}}</td>
-      <td>{{user.mobile}}</td>
-      <td>{{user.gender}}</td>
-      <td>{{user.profession}}</td>
-      <td>{{user.password}}</td>
-    </tr>
-  </tbody>
-</table>
-
 <table class="table">
   <thead>
     <tr>
@@ -43,7 +16,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let user of (users | searchFilter : searchString)">
+    <tr *ngFor="let user of (users | searchFilter : query)">
       <td>{{user.firstName + ' ' + user.lastName}}</td>
       <td>{{user.email}}</td>
       <td>{{user.mobile}}</td>
