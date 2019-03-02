@@ -13,6 +13,9 @@ import { AboutComponent } from './home/about/about.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { NavComponent } from './home/nav/nav.component';
 import { UserListComponent } from './home/user-list/user-list.component';
+import { HighlightDirective } from './directives/highlight.directive';
+import { PlayGroundComponent } from './play-ground/play-ground.component';
+import { UppercaseDirective } from './directives/uppercase.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { UserListComponent } from './home/user-list/user-list.component';
     AboutComponent,
     ContactComponent,
     NavComponent,
-    UserListComponent
+    UserListComponent,
+    HighlightDirective,
+    PlayGroundComponent,
+    UppercaseDirective,
   ],
   imports: [
     BrowserModule,

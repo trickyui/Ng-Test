@@ -14,9 +14,9 @@ export class SignupComponent implements OnInit {
   show = false;
   passwordRegEx = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
   gender = [
-    {key: 'Male', value: 'M'},
-    {key: 'Female', value: 'F'},
-    {key: 'Transgender', value: 'T'}
+    { key: 'Male', value: 'M' },
+    { key: 'Female', value: 'F' },
+    { key: 'Transgender', value: 'T' }
   ]
 
   constructor(private router: Router, private fb: FormBuilder, private data: AuthService) { }
@@ -37,7 +37,7 @@ export class SignupComponent implements OnInit {
   get f() { return this.signupForm.controls }
   onSubmit() {
     this.submitted = true;
-    
+    console.log(this.data.users)
     if (this.f.password != this.f.confirmPassword) {
       this.show = true;
     }

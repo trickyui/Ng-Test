@@ -1,0 +1,22 @@
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item" appHighlight="red">Cras justo odio</li>
+    <li class="list-group-item" appHighlight>Dapibus ac facilisis in</li>
+    <li class="list-group-item" appHighlight>Morbi leo risus</li>
+    <li class="list-group-item" appHighlight>Porta ac consectetur ac</li>
+    <li class="list-group-item" appHighlight>Vestibulum at eros</li>
+  </ul>
+  <div class="mt-4">
+    <button type="button" (click)="onSwitchItem('a')" class="btn btn-primary">Primary</button>
+    <button type="button" (click)="onSwitchItem('b')" class="btn btn-secondary">Secondary</button>
+    <button type="button" (click)="onSwitchItem('c')" class="btn btn-success">Success</button>
+    <button type="button" (click)="onSwitchItem('d')" class="btn btn-danger">Danger</button>
+  </div>
+  <div [ngSwitch]="colorName" class="mt-5">
+    <div class="alert alert-primary" *ngSwitchCase="'primary'" role="alert">A simple primary alert—check it out!</div>
+    <div class="alert alert-secondary" *ngSwitchCase="'secondary'" role="alert">A simple primary alert—check it out!</div>
+    <div class="alert alert-success" *ngSwitchCase="'success'" role="alert">A simple primary alert—check it out!</div>
+    <div class="alert alert-danger" *ngSwitchCase="'danger'" role="alert">A simple primary alert—check it out!</div>
+    <div class="alert alert-warning" *ngSwitchDefault role="alert">A simple primary alert—check it out!</div>
+  </div>
+</div>

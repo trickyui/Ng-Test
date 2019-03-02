@@ -12,8 +12,17 @@ export class AuthService {
       email: 'v@gmail.com',
       mobile: 9560353234,
       gender: 'M',
-      profession: 'Teacher',
+      profession: 'Doctor',
       password: 'Password@123'
+    },
+    {
+      firstName: 'Kartik',
+      lastName: 'Gogia',
+      email: 'g@gmail.com',
+      mobile: 8285544964,
+      gender: 'M',
+      profession: 'Teacher',
+      password: 'Password@345'
     }
   ]
 
