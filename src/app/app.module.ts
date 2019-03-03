@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { BrowserAnimationsModule  } from "@angular/platform-browser/animations";
+import { MyOwnMateialModule } from "./material-module";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,7 +39,9 @@ import { ProductFilterPipe } from './pipes/product-filter.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MyOwnMateialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
